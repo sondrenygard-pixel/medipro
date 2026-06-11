@@ -1,5 +1,6 @@
 import "./global.css"
 
+
 export const metadata = {
   title: "MediPro | Digitale verktøy for helsepersonell",
   description:
