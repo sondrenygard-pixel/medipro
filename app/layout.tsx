@@ -1,4 +1,4 @@
-import "./globals.css"
+import "./global.css"
 
 export const metadata = {
   title: "MediPro | Digitale verktøy for helsepersonell",
