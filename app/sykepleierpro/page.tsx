@@ -25,50 +25,72 @@ function Header() {
 export default function SykepleierProPage() {
   return (
     <main className="subPage">
-      <div className="subTop">
+      <div className="subTop productHeroTop">
         <Header />
 
-        <section className="subHero">
-          <div className="subHeroBadge">For sykepleiere</div>
-          <h1>SykepleierPro</h1>
-          <p>
-            Kliniske verktøy, beregninger og faglig støtte samlet i én moderne
-            app for sykepleiere og sykepleierstudenter.
-          </p>
+        <section className="productHero">
+          <div className="productHeroText">
+            <div className="subHeroBadge">For sykepleiere</div>
+            <h1>SykepleierPro</h1>
+            <p>
+              En moderne klinisk arbeidsflate for sykepleiere som trenger rask
+              tilgang til vurderingsverktøy, beregninger, struktur og faglig
+              støtte gjennom vakten.
+            </p>
+
+            <div className="heroActions">
+              <a className="primaryButton" href="/support">Support</a>
+              <a className="secondaryButton" href="/virksomheter">Virksomhetslisens</a>
+            </div>
+          </div>
+
+          <div className="productHeroImage">
+            <img src="/kort-sykepleierpro.png" alt="SykepleierPro app" />
+          </div>
         </section>
       </div>
 
       <section className="subContent">
+        <div className="featureIntro">
+          <span>Utviklet for klinisk hverdag</span>
+          <h2>Raskere oversikt når vakten krever presisjon.</h2>
+          <p>
+            SykepleierPro er laget for praktisk bruk i arbeidshverdagen. Målet
+            er å samle de verktøyene sykepleiere ofte trenger, slik at viktig
+            støtte er tilgjengelig uten unødvendig leting.
+          </p>
+        </div>
+
         <div className="subGrid">
           <article className="subCard">
-            <h2>Støtte gjennom vakten</h2>
+            <h2>Kliniske vurderinger</h2>
             <p>
-              Rask tilgang til NEWS2, ABCDE, ISBAR, GCS, væskebalanse,
-              legemiddelregning og andre praktiske verktøy.
+              Verktøy som NEWS2, ABCDE, GCS og sepsis-støtte gir struktur når
+              pasientens tilstand skal vurderes og kommuniseres videre.
             </p>
           </article>
 
           <article className="subCard">
-            <h2>Bygget for klinisk hverdag</h2>
+            <h2>Rapport og kommunikasjon</h2>
             <p>
-              Appen er laget for situasjoner der man trenger oversikt raskt,
-              uten å bruke unødvendig tid på å lete i ulike kilder.
+              ISBAR og strukturerte fagkort hjelper med tydelig rapport,
+              prioritering og tryggere informasjonsflyt i vakten.
+            </p>
+          </article>
+
+          <article className="subCard">
+            <h2>Beregninger og legemidler</h2>
+            <p>
+              Praktiske kalkulatorer for dose, infusjon, fortynning, væske og
+              andre relevante beregninger samlet på ett sted.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Kontinuerlig utvikling</h2>
             <p>
-              Nye funksjoner, fagområder og forbedringer legges til fortløpende
-              basert på klinisk erfaring og behov i norsk helsetjeneste.
-            </p>
-          </article>
-
-          <article className="subCard">
-            <h2>For ansatte og arbeidsgivere</h2>
-            <p>
-              SykepleierPro kan brukes med individuelt abonnement eller tilbys
-              gjennom virksomhetslisens.
+              Appen videreutvikles fortløpende med nye funksjoner, bedre
+              struktur og mer innhold tilpasset norsk helsetjeneste.
             </p>
           </article>
         </div>
