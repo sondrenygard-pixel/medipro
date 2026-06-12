@@ -692,3 +692,273 @@
     font-size: 19px;
   }
 }
+
+.cleanHome {
+  min-height: 100vh;
+  background: #061224;
+  color: white;
+}
+
+.cleanNav {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 30px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cleanBrand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+}
+
+.cleanBrandMark {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  background: linear-gradient(135deg, #2563ff, #29d3d1);
+}
+
+.cleanBrand strong {
+  display: block;
+  font-size: 24px;
+}
+
+.cleanBrand span {
+  display: block;
+  color: #8ea4c4;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.cleanNav nav {
+  display: flex;
+  gap: 32px;
+  font-weight: 800;
+  color: rgba(255,255,255,.82);
+}
+
+.cleanNavButton {
+  padding: 14px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.18);
+  color: white;
+  font-weight: 900;
+}
+
+.cleanHero {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 90px 28px 120px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.cleanBadge {
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(41,211,209,.35);
+  color: #5eead4;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+
+.cleanHero h1 {
+  margin: 0;
+  font-size: clamp(68px, 8vw, 116px);
+  line-height: .9;
+  letter-spacing: -.075em;
+}
+
+.cleanHero h1 span {
+  display: block;
+  color: #1d72ff;
+}
+
+.cleanHero p {
+  max-width: 700px;
+  color: #c9d6ea;
+  font-size: 22px;
+  line-height: 1.65;
+  margin: 30px 0 0;
+}
+
+.cleanActions {
+  display: flex;
+  gap: 16px;
+  margin-top: 38px;
+}
+
+.cleanPrimary,
+.cleanSecondary {
+  padding: 17px 26px;
+  border-radius: 14px;
+  font-weight: 950;
+}
+
+.cleanPrimary {
+  background: #126bff;
+  color: white;
+  box-shadow: 0 20px 50px rgba(18,107,255,.32);
+}
+
+.cleanSecondary {
+  border: 1px solid rgba(255,255,255,.2);
+  color: white;
+}
+
+.cleanPhone {
+  justify-self: center;
+  width: 360px;
+  min-height: 640px;
+  border-radius: 48px;
+  padding: 30px;
+  background: linear-gradient(180deg, #0a1930, #030b18);
+  border: 8px solid #1d2a3d;
+  box-shadow: 0 50px 120px rgba(0,0,0,.55);
+  transform: rotate(4deg);
+}
+
+.phoneStatus {
+  font-weight: 900;
+  margin-bottom: 34px;
+}
+
+.phoneTitle {
+  font-size: 22px;
+  font-weight: 950;
+  color: #5eead4;
+}
+
+.cleanPhone h2 {
+  font-size: 34px;
+  margin: 30px 0 6px;
+}
+
+.cleanPhone p {
+  font-size: 16px;
+  margin: 0 0 28px;
+  color: #b7c7df;
+}
+
+.phoneGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.phoneGrid div {
+  min-height: 86px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.08);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.cleanSection {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 90px 28px 120px;
+}
+
+.cleanSectionHeader {
+  max-width: 900px;
+  margin: 0 auto 44px;
+}
+
+.cleanSectionHeader h2 {
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1;
+  letter-spacing: -.06em;
+  margin: 0 0 18px;
+}
+
+.cleanSectionHeader p {
+  font-size: 20px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.cleanProductGrid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.cleanProduct {
+  min-height: 280px;
+  border-radius: 32px;
+  padding: 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-shadow: 0 26px 70px rgba(15,23,42,.12);
+}
+
+.cleanProduct span {
+  font-size: 30px;
+  font-weight: 950;
+}
+
+.cleanProduct p {
+  color: rgba(255,255,255,.84);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.cleanProduct.nurse {
+  background: linear-gradient(135deg, #0284c7, #14b8a6);
+}
+
+.cleanProduct.ambulance {
+  background: linear-gradient(135deg, #15803d, #facc15);
+}
+
+.cleanProduct.doctor {
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+}
+
+@media (max-width: 900px) {
+  .cleanNav nav,
+  .cleanNavButton {
+    display: none;
+  }
+
+  .cleanHero {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+  }
+
+  .cleanHero h1 {
+    font-size: 64px;
+  }
+
+  .cleanHero p {
+    font-size: 19px;
+  }
+
+  .cleanPhone {
+    width: 100%;
+    max-width: 360px;
+    transform: none;
+  }
+
+  .cleanProductGrid {
+    grid-template-columns: 1fr;
+  }
+}
