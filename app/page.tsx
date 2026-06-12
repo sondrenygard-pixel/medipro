@@ -47,20 +47,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="cleanPhone">
-          <div className="phoneStatus">09:41</div>
-          <div className="phoneTitle">MediPro</div>
-          <h2>God vakt</h2>
-          <p>Kunnskap. Struktur. Trygghet.</p>
-
-          <div className="phoneGrid">
-            <div>NEWS2</div>
-            <div>ABCDE</div>
-            <div>Sepsis</div>
-            <div>ISBAR</div>
-            <div>Legemidler</div>
-            <div>Regning</div>
-          </div>
+        <div className="heroRealImage">
+          <img
+            src="/sykepleierpro-header.jpg"
+            alt="SykepleierPro klinisk støtte på vakt"
+          />
         </div>
       </section>
 
