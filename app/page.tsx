@@ -1,11 +1,52 @@
+function BrandLogo() {
+  return (
+    <a className="brand" href="/">
+      <div className="brandSymbol">
+        <span className="brandPulse" />
+        <span className="brandCross">+</span>
+      </div>
+      <div>
+        <strong>MediPro</strong>
+        <small>Kliniske verktøy</small>
+      </div>
+    </a>
+  )
+}
+
+function ProductVisual({
+  type,
+  title,
+}: {
+  type: "nurse" | "ambulance" | "doctor"
+  title: string
+}) {
+  return (
+    <div className={`productVisual ${type}`}>
+      <div className="visualTop">
+        <div className="visualIcon">+</div>
+        <span>{title}</span>
+      </div>
+
+      <div className="visualLines">
+        <span />
+        <span />
+        <span />
+      </div>
+
+      <div className="visualGrid">
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <main className="page">
       <header className="header">
-        <a className="brand" href="/">
-          <div className="mark"><span>M</span></div>
-          <span>MediPro</span>
-        </a>
+        <BrandLogo />
 
         <nav className="nav">
           <a href="/sykepleierpro">SykepleierPro</a>
@@ -22,33 +63,42 @@ export default function Home() {
           <h1>Digitale verktøy utviklet for helsepersonell.</h1>
           <p className="lead">
             MediPro utvikler moderne kliniske apper for sykepleiere,
-            ambulansepersonell og leger. Plattformen gir rask tilgang til
-            faglig støtte, praktiske verktøy og klinisk beslutningsstøtte i en
+            ambulansepersonell og leger. Plattformen gir rask tilgang til faglig
+            støtte, praktiske verktøy og klinisk beslutningsstøtte i en
             arbeidshverdag der tid, presisjon og trygghet betyr alt.
           </p>
 
           <div className="actions">
-            <a className="btnPrimary" href="#produkter">Utforsk produktene</a>
-            <a className="btnGhost" href="/virksomheter">For virksomheter</a>
+            <a className="btnPrimary" href="#produkter">
+              Utforsk produktene
+            </a>
+            <a className="btnGhost" href="/virksomheter">
+              For virksomheter
+            </a>
           </div>
         </div>
 
-        <div className="heroPanel">
+        <div className="heroPanel premiumPanel">
           <div className="mockup">
             <div className="mockHeader">
-              <strong>Klinisk arbeidsflate</strong>
+              <div>
+                <strong>Klinisk arbeidsflate</strong>
+                <p>Tre profesjoner. Én langsiktig plattform.</p>
+              </div>
               <span className="status">I kontinuerlig utvikling</span>
             </div>
 
-            <div className="mockCard">
+            <div className="mockCard accentNurse">
               <strong>SykepleierPro</strong>
               <p>Verktøy for vurdering, rapport, legemidler og vaktarbeid.</p>
             </div>
-            <div className="mockCard">
+
+            <div className="mockCard accentAmbulance">
               <strong>AmbulansePro</strong>
               <p>Prehospital støtte for struktur, tiltak og raske vurderinger.</p>
             </div>
-            <div className="mockCard">
+
+            <div className="mockCard accentDoctor">
               <strong>LegePro</strong>
               <p>Kliniske verktøy for leger i travel arbeidshverdag.</p>
             </div>
@@ -69,31 +119,40 @@ export default function Home() {
           </div>
 
           <div className="grid3">
-            <article className="card">
+            <article className="card productCard">
+              <ProductVisual type="nurse" title="SykepleierPro" />
               <h3>SykepleierPro</h3>
               <p>
                 For sykepleiere som ønsker rask tilgang til kliniske verktøy,
                 beregninger og faglig støtte gjennom vakten.
               </p>
-              <a className="cardLink" href="/sykepleierpro">Les mer</a>
+              <a className="cardLink" href="/sykepleierpro">
+                Les mer
+              </a>
             </article>
 
-            <article className="card">
+            <article className="card productCard">
+              <ProductVisual type="ambulance" title="AmbulansePro" />
               <h3>AmbulansePro</h3>
               <p>
                 For prehospitalt personell som trenger struktur, oversikt og
                 støtte i situasjoner der tid er avgjørende.
               </p>
-              <a className="cardLink" href="/ambulansepro">Les mer</a>
+              <a className="cardLink" href="/ambulansepro">
+                Les mer
+              </a>
             </article>
 
-            <article className="card">
+            <article className="card productCard">
+              <ProductVisual type="doctor" title="LegePro" />
               <h3>LegePro</h3>
               <p>
                 En klinisk arbeidsflate for leger, med relevante verktøy og
                 faglig støtte i en travel arbeidshverdag.
               </p>
-              <a className="cardLink" href="/legepro">Les mer</a>
+              <a className="cardLink" href="/legepro">
+                Les mer
+              </a>
             </article>
           </div>
         </section>
@@ -150,10 +209,7 @@ export default function Home() {
       <footer className="footer">
         <div className="footerInner">
           <div>
-            <a className="brand" href="/">
-              <div className="mark"><span>M</span></div>
-              <span>MediPro</span>
-            </a>
+            <BrandLogo />
             <p>Digitale verktøy for helsepersonell.</p>
           </div>
 
