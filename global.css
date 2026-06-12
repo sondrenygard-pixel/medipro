@@ -275,3 +275,130 @@ h1 {
     padding: 32px;
   }
 }
+
+.visualSubpage {
+  background: #f8fafc;
+}
+
+.subHeader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  color: white;
+}
+
+.subHeader .nav {
+  color: rgba(255,255,255,.84);
+}
+
+.brandImage {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.subImageHero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.subImageHeroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subImageHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3, 10, 24, .88) 0%, rgba(3, 10, 24, .62) 44%, rgba(3, 10, 24, .16) 100%),
+    linear-gradient(180deg, rgba(3, 10, 24, .45), rgba(3, 10, 24, .18));
+}
+
+.subImageHeroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 140px 24px 80px;
+  color: white;
+}
+
+.subImageHeroContent h1 {
+  margin: 18px 0 0;
+  font-size: clamp(58px, 8vw, 108px);
+  line-height: .92;
+  letter-spacing: -0.075em;
+  color: white;
+}
+
+.subImageHeroContent p {
+  max-width: 720px;
+  color: rgba(255,255,255,.84);
+  font-size: 23px;
+  line-height: 1.6;
+  margin: 28px 0 0;
+}
+
+.enhancedContent {
+  margin-top: -70px;
+  position: relative;
+  z-index: 5;
+}
+
+.featureCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: linear-gradient(180deg, #16a34a, #facc15);
+}
+
+.featureNumber {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: #16a34a;
+  font-weight: 950;
+  letter-spacing: .12em;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .subHeader {
+    position: relative;
+    background: #061224;
+  }
+
+  .brandImage {
+    height: 42px;
+  }
+
+  .subImageHero {
+    min-height: 680px;
+  }
+
+  .subImageHeroBg {
+    object-position: 60% center;
+  }
+
+  .subImageHeroContent {
+    padding: 80px 24px;
+  }
+
+  .subImageHeroContent p {
+    font-size: 19px;
+  }
+}
