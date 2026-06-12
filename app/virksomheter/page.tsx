@@ -1,3 +1,5 @@
+import Footer from "../components/Footer"
+
 function Header() {
   return (
     <header className="subHeader">
