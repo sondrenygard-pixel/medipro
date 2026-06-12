@@ -606,3 +606,89 @@
     padding: 70px 24px;
   }
 }
+
+.imageBrand img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.imageHero {
+  position: relative;
+  min-height: 820px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.imageHeroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3, 10, 24, .84) 0%, rgba(3, 10, 24, .58) 42%, rgba(3, 10, 24, .10) 100%),
+    linear-gradient(180deg, rgba(3, 10, 24, .36), rgba(3, 10, 24, .18));
+}
+
+.imageHeroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 56px;
+}
+
+.imageHeroContent h1 {
+  margin: 0;
+  font-size: clamp(72px, 8vw, 126px);
+  line-height: .9;
+  letter-spacing: -0.075em;
+  color: white;
+}
+
+.imageHeroContent h1 span {
+  display: block;
+  color: #1976ff;
+}
+
+.imageHeroContent p {
+  max-width: 720px;
+  color: rgba(255,255,255,.82);
+  font-size: 24px;
+  line-height: 1.55;
+  margin: 30px 0 0;
+}
+
+@media (max-width: 980px) {
+  .imageBrand img {
+    height: 42px;
+  }
+
+  .imageHero {
+    min-height: 760px;
+  }
+
+  .imageHeroBg {
+    object-position: 62% center;
+  }
+
+  .imageHeroContent {
+    padding: 70px 24px;
+  }
+
+  .imageHeroContent h1 {
+    font-size: 64px;
+  }
+
+  .imageHeroContent p {
+    font-size: 19px;
+  }
+}
