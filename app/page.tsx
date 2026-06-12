@@ -1,83 +1,92 @@
 function BrandLogo() {
   return (
-    <a className="brandHero imageBrand" href="/">
-      <img src="/medipro-logo.png" alt="MediPro" />
+    <a className="cleanBrand" href="/">
+      <div className="cleanBrandMark">M</div>
+      <div>
+        <strong>MediPro</strong>
+        <span>Kliniske verktøy</span>
+      </div>
     </a>
   )
 }
 
 export default function Home() {
   return (
-    <main className="mediproHome">
-      <header className="heroNav">
+    <main className="cleanHome">
+      <header className="cleanNav">
         <BrandLogo />
 
         <nav>
           <a href="#produkter">Produkter</a>
-          <a href="/virksomheter">For virksomheter</a>
+          <a href="/virksomheter">Virksomheter</a>
           <a href="/faglige-kilder">Faglige kilder</a>
           <a href="/kontakt">Kontakt</a>
         </nav>
 
-        <div className="navActions">
-          <a className="navPrimary" href="#produkter">Se produkter</a>
-          <a className="navGhost" href="/support">Support</a>
-        </div>
+        <a className="cleanNavButton" href="/support">Support</a>
       </header>
 
-      <section className="imageHero">
-        <img
-          src="/medipro-hero-v2.png"
-          alt="MediPro kliniske verktøy for helsepersonell"
-          className="imageHeroBg"
-        />
-
-        <div className="imageHeroOverlay" />
-
-        <div className="imageHeroContent">
-          <div className="heroBadge">Utviklet av helsepersonell</div>
+      <section className="cleanHero">
+        <div className="cleanHeroText">
+          <div className="cleanBadge">Utviklet for norsk helsetjeneste</div>
 
           <h1>
             Klinisk støtte
-            <span>på vakt</span>
+            <span>på vakt.</span>
           </h1>
 
           <p>
-            MediPro samler kliniske verktøy i én plattform – utviklet for
-            sykepleiere, ambulansepersonell og leger i norsk helsetjeneste.
+            MediPro samler digitale verktøy for sykepleiere, ambulansepersonell
+            og leger. Plattformen utvikles kontinuerlig for å gi raskere tilgang
+            til faglig støtte, struktur og praktiske kliniske verktøy.
           </p>
 
-          <div className="heroButtons">
-            <a className="heroPrimary" href="#produkter">Utforsk produktene</a>
-            <a className="heroSecondary" href="/virksomheter">For virksomheter</a>
+          <div className="cleanActions">
+            <a href="#produkter" className="cleanPrimary">Utforsk produktene</a>
+            <a href="/virksomheter" className="cleanSecondary">For virksomheter</a>
+          </div>
+        </div>
+
+        <div className="cleanPhone">
+          <div className="phoneStatus">09:41</div>
+          <div className="phoneTitle">MediPro</div>
+          <h2>God vakt</h2>
+          <p>Kunnskap. Struktur. Trygghet.</p>
+
+          <div className="phoneGrid">
+            <div>NEWS2</div>
+            <div>ABCDE</div>
+            <div>Sepsis</div>
+            <div>ISBAR</div>
+            <div>Legemidler</div>
+            <div>Regning</div>
           </div>
         </div>
       </section>
 
-      <section className="productSection" id="produkter">
-        <div className="sectionHeader">
+      <section className="cleanSection" id="produkter">
+        <div className="cleanSectionHeader">
           <h2>Én plattform. Flere profesjoner.</h2>
           <p>
-            MediPro bygges som en samlet satsing på digitale verktøy for norsk
-            helsetjeneste. Hver app er tilpasset sin yrkesgruppe, men utvikles
-            som del av samme langsiktige plattform.
+            Hver app er tilpasset sin yrkesgruppe, men utvikles som del av samme
+            profesjonelle produktfamilie.
           </p>
         </div>
 
-        <div className="productGrid">
-          <a className="productPremium nurse" href="/sykepleierpro">
+        <div className="cleanProductGrid">
+          <a href="/sykepleierpro" className="cleanProduct nurse">
             <span>SykepleierPro</span>
-            <p>For sykepleiere som ønsker rask tilgang til kliniske verktøy og faglig støtte.</p>
+            <p>Kliniske verktøy, beregninger og støtte gjennom vakten.</p>
           </a>
 
-          <a className="productPremium ambulance" href="/ambulansepro">
+          <a href="/ambulansepro" className="cleanProduct ambulance">
             <span>AmbulansePro</span>
-            <p>For prehospitalt personell som trenger struktur og støtte i felt.</p>
+            <p>Strukturert støtte for prehospital vurdering og tiltak.</p>
           </a>
 
-          <a className="productPremium doctor" href="/legepro">
+          <a href="/legepro" className="cleanProduct doctor">
             <span>LegePro</span>
-            <p>For leger som ønsker relevante verktøy samlet i én klinisk arbeidsflate.</p>
+            <p>Relevante kliniske verktøy og faglig støtte for leger.</p>
           </a>
         </div>
       </section>
