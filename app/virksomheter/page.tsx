@@ -1,65 +1,53 @@
+import { SiteHeader } from "../components"
+
 export default function VirksomheterPage() {
   return (
-    <main className="subpage">
-      <header className="header">
-        <a className="brand" href="/"><div className="mark"><span>M</span></div><span>MediPro</span></a>
-        <nav className="nav">
-          <a href="/sykepleierpro">SykepleierPro</a>
-          <a href="/ambulansepro">AmbulansePro</a>
-          <a href="/legepro">LegePro</a>
-          <a href="/virksomheter">Virksomheter</a>
-          <a href="/support">Support</a>
-        </nav>
-      </header>
+    <main className="premiumPage">
+      <SiteHeader />
 
-      <section className="subHero">
+      <section className="premiumSubHero">
         <div className="eyebrow">For arbeidsgivere</div>
         <h1>Digitale verktøy for hele fagmiljøer.</h1>
         <p>
-          MediPro tilbyr virksomhetslisenser for arbeidsgivere som ønsker å gi
-          ansatte tilgang til moderne kliniske støtteverktøy gjennom én samlet
-          avtale.
+          MediPro kan tilbys ansatte gjennom virksomhetslisens, med én samlet
+          avtale for sykehus, kommuner, legevakter, ambulansetjenester og
+          utdanningsinstitusjoner.
         </p>
       </section>
 
-      <section className="content">
-        <article className="contentCard">
-          <h2>Felles lisens for ansatte</h2>
-          <p>
-            Arbeidsgivere kan kjøpe tilgang til ansatte i sykehus, kommuner,
-            legevakter, ambulansetjenester, utdanningsinstitusjoner og private
-            helsetjenester. Dette gir en enklere og mer samlet løsning enn at
-            hver enkelt ansatt må håndtere abonnement selv.
-          </p>
-        </article>
+      <section className="premiumContent">
+        <div className="premiumGrid">
+          <article className="premiumCard">
+            <h2>Felles lisens</h2>
+            <p>
+              Gi ansatte tilgang til samme digitale verktøy uten at hver enkelt
+              må håndtere abonnement selv.
+            </p>
+          </article>
 
-        <article className="contentCard">
-          <h2>Spesialtilpasning ved virksomhetsavtale</h2>
-          <p>
-            Ved felles lisens kan MediPro tilpasses kundens behov. Dette kan
-            omfatte relevante fagområder, interne ressurser, opplæringsinnhold,
-            prosedyrereferanser, prioriterte funksjoner og annen innretning som
-            gjør appene mer relevante for virksomhetens ansatte.
-          </p>
-        </article>
+          <article className="premiumCard">
+            <h2>Tilpasning</h2>
+            <p>
+              Ved virksomhetsavtale kan innhold, fagområder og prioriterte
+              funksjoner tilpasses organisasjonens behov.
+            </p>
+          </article>
 
-        <article className="contentCard">
-          <h2>En løsning som utvikles over tid</h2>
-          <p>
-            MediPro er bygget for kontinuerlig videreutvikling. Nye funksjoner,
-            forbedringer og faglig innhold publiseres fortløpende. For
-            virksomheter betyr det at løsningen kan vokse sammen med behovene i
-            organisasjonen.
-          </p>
-        </article>
+          <article className="premiumCard">
+            <h2>Kontinuerlig utvikling</h2>
+            <p>
+              Plattformen utvikles over tid med nye funksjoner, faglig innhold
+              og forbedringer.
+            </p>
+          </article>
 
-        <article className="contentCard">
-          <h2>Kontakt for virksomhetsavtale</h2>
-          <p>
-            For spørsmål om lisensmodeller, tilpasning eller samarbeid, kontakt
-            oss på post@medipro.no.
-          </p>
-        </article>
+          <article className="premiumCard">
+            <h2>Kontakt</h2>
+            <p>
+              For virksomhetsavtale: post@medipro.no
+            </p>
+          </article>
+        </div>
       </section>
     </main>
   )
