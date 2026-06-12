@@ -18,35 +18,12 @@ export default function AmbulanseProPage() {
         </nav>
       </header>
 
-      <section className="subImageHero ambulanceHero">
+      <section className="subImageHero imageOnlyHero">
         <img
           src="/ambulansepro-hero-v2.jpg"
           alt="AmbulansePro"
           className="subImageHeroBg"
         />
-
-        <div className="subImageHeroOverlay" />
-
-        <div className="subImageHeroContent">
-          <div className="eyebrow">For prehospitalt personell</div>
-
-          <h1>AmbulansePro</h1>
-
-          <p>
-            Strukturert støtte for ambulansepersonell som trenger rask tilgang
-            til faglige ressurser, vurderingsstøtte og praktiske verktøy i
-            prehospitalt arbeid.
-          </p>
-
-          <div className="heroButtons">
-            <a className="heroPrimary" href="/kontakt">
-              Kontakt oss
-            </a>
-            <a className="heroSecondary" href="/virksomheter">
-              Virksomhetslisens
-            </a>
-          </div>
-        </div>
       </section>
 
       <section className="content enhancedContent">
