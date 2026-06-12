@@ -56,16 +56,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="productsSection" id="produkter">
-        <div className="sectionIntro">
-          <span>Produktfamilien</span>
-          <h2>Én plattform. Flere profesjoner.</h2>
-          <p>
-            Hver app er tilpasset sin yrkesgruppe, men utvikles som del av
-            samme profesjonelle produktfamilie.
-          </p>
-        </div>
-      </section>
-    </main>
-  )
-}
+<section className="productsSection" id="produkter">
+  <div className="sectionIntro">
+    <span>Produktfamilien</span>
+    <h2>Én plattform. Flere profesjoner.</h2>
+    <p>
+      Hver app er tilpasset sin yrkesgruppe, men utvikles som del av samme
+      profesjonelle produktfamilie.
+    </p>
+  </div>
+
+  <div className="productCards">
+    <a href="/sykepleierpro" className="productCard imageCard">
+      <img src="/kort-sykepleierpro.png" alt="SykepleierPro" />
+      <div className="productCardOverlay" />
+      <div className="productCardContent">
+        <h3>SykepleierPro</h3>
+        <p>Kliniske verktøy, beregninger og støtte gjennom vakten.</p>
+        <span>Les mer om SykepleierPro →</span>
+      </div>
+    </a>
+
+    <a href="/ambulansepro" className="productCard imageCard">
+      <img src="/kort-ambulansepro.png" alt="AmbulansePro" />
+      <div className="productCardOverlay" />
+      <div className="productCardContent">
+        <h3>AmbulansePro</h3>
+        <p>Strukturert støtte for prehospital vurdering, tiltak og praktiske beslutninger.</p>
+        <span>Les mer om AmbulansePro →</span>
+      </div>
+    </a>
+
+    <a href="/legepro" className="productCard imageCard">
+      <img src="/kort-legepro.png" alt="LegePro" />
+      <div className="productCardOverlay" />
+      <div className="productCardContent">
+        <h3>LegePro</h3>
+        <p>Relevante kliniske verktøy, kalkulatorer og faglig støtte for leger.</p>
+        <span>Les mer om LegePro →</span>
+      </div>
+    </a>
+  </div>
+</section>
