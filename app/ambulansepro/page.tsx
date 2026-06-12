@@ -1,8 +1,11 @@
 export default function AmbulanseProPage() {
   return (
-    <main className="subpage">
-      <header className="header">
-        <a className="brand" href="/"><div className="mark"><span>M</span></div><span>MediPro</span></a>
+    <main className="subpage visualSubpage">
+      <header className="header subHeader">
+        <a className="brand" href="/">
+          <img src="/medipro-logo-v2.png" alt="MediPro" className="brandImage" />
+        </a>
+
         <nav className="nav">
           <a href="/sykepleierpro">SykepleierPro</a>
           <a href="/ambulansepro">AmbulansePro</a>
@@ -12,18 +15,33 @@ export default function AmbulanseProPage() {
         </nav>
       </header>
 
-      <section className="subHero">
-        <div className="eyebrow">For prehospitalt personell</div>
-        <h1>AmbulansePro</h1>
-        <p>
-          AmbulansePro utvikles for ambulansepersonell som trenger rask tilgang
-          til strukturert støtte, faglige ressurser og praktiske verktøy i
-          prehospitalt arbeid.
-        </p>
+      <section className="subImageHero ambulanceHero">
+        <img
+          src="/ambulansepro-hero-v2.jpg"
+          alt="AmbulansePro for prehospitalt personell"
+          className="subImageHeroBg"
+        />
+        <div className="subImageHeroOverlay" />
+
+        <div className="subImageHeroContent">
+          <div className="eyebrow">For prehospitalt personell</div>
+          <h1>AmbulansePro</h1>
+          <p>
+            Strukturert støtte for ambulansepersonell som trenger rask tilgang
+            til faglige ressurser, vurderingsstøtte og praktiske verktøy i
+            prehospitalt arbeid.
+          </p>
+
+          <div className="heroButtons">
+            <a className="heroPrimary" href="/kontakt">Kontakt oss</a>
+            <a className="heroSecondary" href="/virksomheter">Virksomhetslisens</a>
+          </div>
+        </div>
       </section>
 
-      <section className="content">
-        <article className="contentCard">
+      <section className="content enhancedContent">
+        <article className="contentCard featureCard">
+          <span className="featureNumber">01</span>
           <h2>Utviklet for arbeid i felt</h2>
           <p>
             Prehospitalt arbeid krever raske vurderinger, tydelig struktur og
@@ -37,7 +55,8 @@ export default function AmbulanseProPage() {
           </p>
         </article>
 
-        <article className="contentCard">
+        <article className="contentCard featureCard">
+          <span className="featureNumber">02</span>
           <h2>Mer enn en oppslagsapp</h2>
           <p>
             AmbulansePro skal ikke bare vise informasjon. Appen utvikles som en
@@ -47,16 +66,18 @@ export default function AmbulanseProPage() {
           </p>
         </article>
 
-        <article className="contentCard">
+        <article className="contentCard featureCard">
+          <span className="featureNumber">03</span>
           <h2>Kontinuerlig videreutvikling</h2>
           <p>
             AmbulansePro er under aktiv utvikling. Nye funksjoner og fagområder
-            vil legges til fortløpende, med mål om å gjøre appen stadig mer
-            relevant for ambulansepersonell og prehospitale fagmiljøer.
+            legges til fortløpende, med mål om å gjøre appen stadig mer relevant
+            for ambulansepersonell og prehospitale fagmiljøer.
           </p>
         </article>
 
-        <article className="contentCard">
+        <article className="contentCard featureCard">
+          <span className="featureNumber">04</span>
           <h2>For ansatte og arbeidsgivere</h2>
           <p>
             Appen kan brukes gjennom individuelt abonnement eller tilbys gjennom
