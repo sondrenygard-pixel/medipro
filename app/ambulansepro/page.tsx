@@ -21,7 +21,7 @@ export default function AmbulanseProPage() {
       <section className="subImageHero ambulanceHero">
         <img
           src="/ambulansepro-hero-v2.jpg"
-          alt="AmbulansePro for prehospitalt personell"
+          alt="AmbulansePro"
           className="subImageHeroBg"
         />
 
