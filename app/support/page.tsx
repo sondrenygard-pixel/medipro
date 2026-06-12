@@ -111,3 +111,5 @@ export default function SupportPage() {
         </div>
       </section>
     </main>
+  )
+}
