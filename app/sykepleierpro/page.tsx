@@ -1,73 +1,82 @@
+function Header() {
+  return (
+    <header className="subHeader">
+      <a className="siteBrand" href="/">
+        <div className="siteBrandMark">M</div>
+        <div>
+          <strong>MediPro</strong>
+          <span>Kliniske verktøy</span>
+        </div>
+      </a>
+
+      <nav className="subNav">
+        <a href="/">Forside</a>
+        <a href="/sykepleierpro">SykepleierPro</a>
+        <a href="/ambulansepro">AmbulansePro</a>
+        <a href="/legepro">LegePro</a>
+        <a href="/virksomheter">Virksomheter</a>
+        <a href="/support">Support</a>
+        <a href="/kontakt">Kontakt</a>
+      </nav>
+    </header>
+  )
+}
+
 export default function SykepleierProPage() {
   return (
-    <main className="subpage">
-      <header className="header">
-        <a className="brand" href="/">
-          <div className="mark"><span>M</span></div>
-          <span>MediPro</span>
-        </a>
+    <main className="subPage">
+      <div className="subTop">
+        <Header />
 
-        <nav className="nav">
-          <a href="/sykepleierpro">SykepleierPro</a>
-          <a href="/ambulansepro">AmbulansePro</a>
-          <a href="/legepro">LegePro</a>
-          <a href="/virksomheter">Virksomheter</a>
-          <a href="/support">Support</a>
-        </nav>
-      </header>
-
-      <section className="subHero">
-        <div className="eyebrow">For sykepleiere</div>
-        <h1>SykepleierPro</h1>
-        <p>
-          SykepleierPro er utviklet for sykepleiere som ønsker rask tilgang til
-          kliniske støtteverktøy, beregninger og faglig informasjon gjennom hele
-          vakten.
-        </p>
-      </section>
-
-      <section className="content">
-        <article className="contentCard">
-          <h2>Støtte gjennom hele arbeidshverdagen</h2>
+        <section className="subHero">
+          <div className="subHeroBadge">For sykepleiere</div>
+          <h1>SykepleierPro</h1>
           <p>
-            Appen samler praktiske verktøy som kan være nyttige i klinisk arbeid,
-            fra vurdering og rapportering til legemiddelregning, væskebalanse og
-            oppfølging av pasienter. Målet er å gjøre relevant informasjon
-            tilgjengelig raskt, tydelig og strukturert.
+            Kliniske verktøy, beregninger og faglig støtte samlet i én moderne
+            app for sykepleiere og sykepleierstudenter.
           </p>
-          <p>
-            SykepleierPro er laget for situasjoner der man trenger oversikt uten
-            å bruke unødvendig tid på å lete i ulike kilder.
-          </p>
-        </article>
+        </section>
+      </div>
 
-        <article className="contentCard">
-          <h2>Utvikles kontinuerlig</h2>
-          <p>
-            SykepleierPro er ikke ment å være et statisk produkt. Nye funksjoner,
-            fagområder og forbedringer legges til fortløpende, basert på klinisk
-            erfaring, brukerbehov og utviklingen i norsk helsetjeneste.
-          </p>
-          <p>
-            Et abonnement gir derfor ikke bare tilgang til dagens funksjoner, men
-            også til en løsning som skal bli bedre over tid.
-          </p>
-        </article>
+      <section className="subContent">
+        <div className="subGrid">
+          <article className="subCard">
+            <h2>Støtte gjennom vakten</h2>
+            <p>
+              Rask tilgang til NEWS2, ABCDE, ISBAR, GCS, væskebalanse,
+              legemiddelregning og andre praktiske verktøy.
+            </p>
+          </article>
 
-        <article className="contentCard">
-          <h2>For både enkeltbrukere og arbeidsgivere</h2>
-          <p>
-            Sykepleiere kan abonnere på appen selv, mens arbeidsgivere kan kjøpe
-            felles lisens til ansatte. Ved virksomhetsavtale kan løsningen
-            tilpasses kundens behov, fagområder, opplæringsinnhold og interne
-            prioriteringer.
-          </p>
-        </article>
+          <article className="subCard">
+            <h2>Bygget for klinisk hverdag</h2>
+            <p>
+              Appen er laget for situasjoner der man trenger oversikt raskt,
+              uten å bruke unødvendig tid på å lete i ulike kilder.
+            </p>
+          </article>
 
-        <div className="notice">
-          SykepleierPro er et faglig støtteverktøy. Appen erstatter ikke klinisk
-          vurdering, lokale prosedyrer, ordinasjoner, dobbeltkontroll eller
-          helsepersonells selvstendige ansvar.
+          <article className="subCard">
+            <h2>Kontinuerlig utvikling</h2>
+            <p>
+              Nye funksjoner, fagområder og forbedringer legges til fortløpende
+              basert på klinisk erfaring og behov i norsk helsetjeneste.
+            </p>
+          </article>
+
+          <article className="subCard">
+            <h2>For ansatte og arbeidsgivere</h2>
+            <p>
+              SykepleierPro kan brukes med individuelt abonnement eller tilbys
+              gjennom virksomhetslisens.
+            </p>
+          </article>
+        </div>
+
+        <div className="subNotice">
+          SykepleierPro er et faglig støtteverktøy og erstatter ikke klinisk
+          vurdering, lokale prosedyrer, ordinasjoner eller helsepersonells
+          selvstendige ansvar.
         </div>
       </section>
     </main>
