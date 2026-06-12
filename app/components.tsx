@@ -1,46 +1,38 @@
-export function BrandLogo() {
+export function SiteHeader() {
   return (
-    <a className="brand" href="/">
-      <div className="brandSymbol">
-        <span className="brandPulse" />
-        <span className="brandCross">+</span>
-      </div>
-      <div>
-        <strong>MediPro</strong>
-        <small>Kliniske verktøy</small>
-      </div>
-    </a>
-  )
-}
+    <header className="topbar">
+      <a className="topbrand" href="/">
+        <div className="topbrandMark">M</div>
+        <div>
+          <strong>MediPro</strong>
+          <span>Kliniske verktøy</span>
+        </div>
+      </a>
 
-export function ProductVisual({
-  type,
-}: {
-  type: "nurse" | "ambulance" | "doctor"
-}) {
-  const title =
-    type === "nurse"
-      ? "SykepleierPro"
-      : type === "ambulance"
-      ? "AmbulansePro"
-      : "LegePro"
+      <nav className="desktopNav">
+        <a href="/">Forside</a>
+        <a href="/sykepleierpro">SykepleierPro</a>
+        <a href="/ambulansepro">AmbulansePro</a>
+        <a href="/legepro">LegePro</a>
+        <a href="/virksomheter">Virksomheter</a>
+        <a href="/faglige-kilder">Faglige kilder</a>
+        <a href="/support">Support</a>
+        <a href="/kontakt">Kontakt</a>
+      </nav>
 
-  return (
-    <div className={`productVisual ${type}`}>
-      <div className="visualTop">
-        <div className="visualIcon">+</div>
-        <span>{title}</span>
-      </div>
-      <div className="visualLines">
-        <span />
-        <span />
-        <span />
-      </div>
-      <div className="visualGrid">
-        <div />
-        <div />
-        <div />
-      </div>
-    </div>
+      <details className="mobileMenu">
+        <summary>Meny</summary>
+        <div>
+          <a href="/">Forside</a>
+          <a href="/sykepleierpro">SykepleierPro</a>
+          <a href="/ambulansepro">AmbulansePro</a>
+          <a href="/legepro">LegePro</a>
+          <a href="/virksomheter">Virksomheter</a>
+          <a href="/faglige-kilder">Faglige kilder</a>
+          <a href="/support">Support</a>
+          <a href="/kontakt">Kontakt</a>
+        </div>
+      </details>
+    </header>
   )
 }
