@@ -1,10 +1,7 @@
 function BrandLogo() {
   return (
-    <a className="brandHero" href="/">
-      <div className="brandM">M</div>
-      <span>
-        Medi<span>Pro</span>
-      </span>
+    <a className="brandHero imageBrand" href="/">
+      <img src="/medipro-logo.png" alt="MediPro" />
     </a>
   )
 }
@@ -28,8 +25,16 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="premiumHero">
-        <div className="heroText">
+      <section className="imageHero">
+        <img
+          src="/medipro-hero-v2.png"
+          alt="MediPro kliniske verktøy for helsepersonell"
+          className="imageHeroBg"
+        />
+
+        <div className="imageHeroOverlay" />
+
+        <div className="imageHeroContent">
           <div className="heroBadge">Utviklet av helsepersonell</div>
 
           <h1>
@@ -45,71 +50,6 @@ export default function Home() {
           <div className="heroButtons">
             <a className="heroPrimary" href="#produkter">Utforsk produktene</a>
             <a className="heroSecondary" href="/virksomheter">For virksomheter</a>
-          </div>
-
-          <div className="trustRow">
-            <div>
-              <strong>Basert på norske behov</strong>
-              <span>Utviklet for klinisk hverdag</span>
-            </div>
-            <div>
-              <strong>Kontinuerlig oppdatert</strong>
-              <span>Nye funksjoner over tid</span>
-            </div>
-            <div>
-              <strong>For ansatte og ledere</strong>
-              <span>Abonnement eller lisens</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="phoneScene">
-          <div className="clinicalBlur" />
-          <div className="phoneMockup">
-            <div className="phoneTop">
-              <span>09:41</span>
-              <span>● ● ●</span>
-            </div>
-
-            <div className="phoneBrand">
-              <div className="miniM">M</div>
-              <strong>MediPro</strong>
-            </div>
-
-            <h2>God morgen!</h2>
-            <p>Kunnskap. Trygghet. Omsorg.</p>
-
-            <div className="quickGrid">
-              <div>Medisin</div>
-              <div>NEWS2</div>
-              <div>Sepsis</div>
-              <div>ABCDE</div>
-              <div>ISBAR</div>
-              <div>Søk</div>
-              <div>Varsler</div>
-              <div>Regning</div>
-            </div>
-
-            <div className="phoneSectionTitle">Kliniske verktøy</div>
-
-            <div className="toolTiles">
-              <div className="tile blue">
-                <strong>NEWS2</strong>
-                <span>Tidlig oppdagelse</span>
-              </div>
-              <div className="tile red">
-                <strong>Sepsis</strong>
-                <span>Screening og tiltak</span>
-              </div>
-              <div className="tile green">
-                <strong>ABCDE</strong>
-                <span>Primærvurdering</span>
-              </div>
-              <div className="tile purple">
-                <strong>GCS</strong>
-                <span>Bevissthetsnivå</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
