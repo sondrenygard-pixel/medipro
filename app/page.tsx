@@ -13,23 +13,28 @@ function BrandLogo() {
 export default function Home() {
   return (
     <main className="homePage">
-      <header className="siteHeader">
-        <BrandLogo />
+      <section className="homeHeroFull">
+        <img
+          src="/medipro-home-hero.jpg"
+          alt=""
+          className="homeHeroBackground"
+        />
+        <div className="homeHeroShade" />
 
-        <nav className="siteNav">
-          <a href="#produkter">Produkter</a>
-          <a href="/virksomheter">Virksomheter</a>
-          <a href="/faglige-kilder">Faglige kilder</a>
-          <a href="/kontakt">Kontakt</a>
-        </nav>
+        <header className="siteHeader">
+          <BrandLogo />
 
-        <a className="headerButton" href="/support">
-          Support
-        </a>
-      </header>
+          <nav className="siteNav">
+            <a href="#produkter">Produkter</a>
+            <a href="/virksomheter">Virksomheter</a>
+            <a href="/faglige-kilder">Faglige kilder</a>
+            <a href="/kontakt">Kontakt</a>
+          </nav>
 
-      <section className="homeHero">
-        <div className="homeHeroText">
+          <a className="headerButton" href="/support">Support</a>
+        </header>
+
+        <div className="homeHeroContent">
           <div className="heroPill">Utviklet for norsk helsetjeneste</div>
 
           <h1>
@@ -45,35 +50,9 @@ export default function Home() {
           </p>
 
           <div className="heroActions">
-            <a className="primaryButton" href="#produkter">
-              Utforsk produktene
-            </a>
-            <a className="secondaryButton" href="/virksomheter">
-              For virksomheter
-            </a>
+            <a className="primaryButton" href="#produkter">Utforsk produktene</a>
+            <a className="secondaryButton" href="/virksomheter">For virksomheter</a>
           </div>
-
-          <div className="heroTrust">
-            <div>
-              <strong>Utviklet med klinisk erfaring</strong>
-              <span>Bygget for reelle behov i arbeidshverdagen.</span>
-            </div>
-            <div>
-              <strong>Kontinuerlig utvikling</strong>
-              <span>Nye funksjoner og forbedringer legges til over tid.</span>
-            </div>
-            <div>
-              <strong>For ansatte og ledere</strong>
-              <span>Individuelt abonnement eller virksomhetslisens.</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="homeHeroVisual">
-          <img
-            src="/medipro-home-hero.jpg"
-            alt="MediPro kliniske verktøy"
-          />
         </div>
       </section>
 
@@ -83,40 +62,8 @@ export default function Home() {
           <h2>Én plattform. Flere profesjoner.</h2>
           <p>
             Hver app er tilpasset sin yrkesgruppe, men utvikles som del av
-            samme profesjonelle produktfamilie for norsk helsetjeneste.
+            samme profesjonelle produktfamilie.
           </p>
-        </div>
-
-        <div className="productCards">
-          <a href="/sykepleierpro" className="productCard sykepleier">
-            <div className="productIcon">S+</div>
-            <h3>SykepleierPro</h3>
-            <p>
-              Kliniske verktøy, beregninger, struktur og faglig støtte gjennom
-              vakten.
-            </p>
-            <span>Les mer</span>
-          </a>
-
-          <a href="/ambulansepro" className="productCard ambulanse">
-            <div className="productIcon">A+</div>
-            <h3>AmbulansePro</h3>
-            <p>
-              Strukturert støtte for prehospital vurdering, tiltak og praktiske
-              beslutninger.
-            </p>
-            <span>Les mer</span>
-          </a>
-
-          <a href="/legepro" className="productCard lege">
-            <div className="productIcon">L+</div>
-            <h3>LegePro</h3>
-            <p>
-              Relevante kliniske verktøy, kalkulatorer og faglig støtte for
-              leger.
-            </p>
-            <span>Les mer</span>
-          </a>
         </div>
       </section>
     </main>
