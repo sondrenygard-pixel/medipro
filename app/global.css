@@ -20,6 +20,8 @@ a {
   text-decoration: none;
 }
 
+/* FORSIDE */
+
 .cleanHome {
   min-height: 100vh;
   background:
@@ -174,7 +176,8 @@ a {
   margin: 32px 0 0;
 }
 
-.cleanActions {
+.cleanActions,
+.heroButtons {
   display: flex;
   gap: 16px;
   margin-top: 40px;
@@ -182,7 +185,9 @@ a {
 }
 
 .cleanPrimary,
-.cleanSecondary {
+.cleanSecondary,
+.heroPrimary,
+.heroSecondary {
   padding: 17px 27px;
   border-radius: 15px;
   font-weight: 950;
@@ -190,7 +195,8 @@ a {
   transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
 }
 
-.cleanPrimary {
+.cleanPrimary,
+.heroPrimary {
   background: linear-gradient(135deg, #126bff, #2588ff);
   color: white;
   box-shadow:
@@ -198,16 +204,19 @@ a {
     inset 0 1px 0 rgba(255,255,255,.28);
 }
 
-.cleanPrimary:hover,
-.cleanSecondary:hover {
-  transform: translateY(-2px);
-}
-
-.cleanSecondary {
+.cleanSecondary,
+.heroSecondary {
   border: 1px solid rgba(255,255,255,.22);
   background: rgba(255,255,255,.045);
   color: white;
   backdrop-filter: blur(14px);
+}
+
+.cleanPrimary:hover,
+.cleanSecondary:hover,
+.heroPrimary:hover,
+.heroSecondary:hover {
+  transform: translateY(-2px);
 }
 
 .heroRealImage {
@@ -238,9 +247,7 @@ a {
     0 0 0 1px rgba(255, 255, 255, .14);
 }
 
-.cleanPhone {
-  display: none !important;
-}
+/* PRODUKTSEKSJON FORSIDE */
 
 .cleanSection {
   background:
@@ -369,7 +376,8 @@ a {
     linear-gradient(135deg, #1d4ed8, #7c3aed);
 }
 
-/* Shared subpages */
+/* FELLES UNDERSIDER */
+
 .subpage {
   min-height: 100vh;
   background: #f8fafc;
@@ -416,6 +424,82 @@ a {
   color: #0f172a;
 }
 
+.visualSubpage {
+  background: #f8fafc;
+}
+
+.subHeader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  color: white;
+}
+
+.subHeader .brand,
+.subHeader .nav {
+  color: white;
+}
+
+.subHeader .mark {
+  box-shadow: 0 16px 40px rgba(0,0,0,.22);
+}
+
+.subHeader .nav a:hover {
+  color: white;
+}
+
+.subImageHero {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #061224;
+}
+
+.subImageHeroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subImageHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3,10,24,.88) 0%, rgba(3,10,24,.58) 42%, rgba(3,10,24,.08) 100%),
+    linear-gradient(180deg, rgba(3,10,24,.35), rgba(3,10,24,.18));
+}
+
+.subImageHeroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 160px 24px 90px;
+  color: white;
+}
+
+.subImageHeroContent h1 {
+  margin: 22px 0 0;
+  font-size: clamp(60px, 8vw, 112px);
+  line-height: .9;
+  letter-spacing: -.075em;
+  color: white;
+}
+
+.subImageHeroContent p {
+  max-width: 720px;
+  margin: 28px 0 0;
+  font-size: 23px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.86);
+}
+
 .subHero,
 .content {
   max-width: 980px;
@@ -434,6 +518,12 @@ a {
   font-weight: 950;
   letter-spacing: .08em;
   text-transform: uppercase;
+}
+
+.subImageHero .eyebrow {
+  color: #bbf7d0;
+  background: rgba(22,163,74,.16);
+  border-color: rgba(34,197,94,.34);
 }
 
 .subHero h1 {
@@ -456,6 +546,12 @@ a {
   gap: 22px;
 }
 
+.enhancedContent {
+  margin-top: -80px;
+  position: relative;
+  z-index: 5;
+}
+
 .contentCard {
   background: white;
   border: 1px solid #e2e8f0;
@@ -476,6 +572,28 @@ a {
   font-size: 16px;
 }
 
+.featureCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: linear-gradient(180deg, #16a34a, #facc15);
+}
+
+.featureNumber {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: #16a34a;
+  font-weight: 950;
+  letter-spacing: .12em;
+  font-size: 13px;
+}
+
 .notice {
   background: #ecfeff;
   border: 1px solid #a5f3fc;
@@ -486,13 +604,14 @@ a {
   font-weight: 650;
 }
 
-/* Kill old broken image sections */
+/* SKJUL GAMMELT / ØDELAGT MOCKUP-KODE, MEN IKKE UNDERSIDE-HERO */
+
 .imageHero,
-.subImageHero,
 .phoneScene,
 .phoneMockup,
 .heroPanel,
-.deviceCard {
+.deviceCard,
+.cleanPhone {
   display: none !important;
 }
 
@@ -541,9 +660,34 @@ a {
     display: none;
   }
 
+  .subHeader {
+    position: relative;
+    background: #061224;
+  }
+
+  .subImageHero {
+    min-height: 650px;
+  }
+
+  .subImageHeroBg {
+    object-position: 60% center;
+  }
+
+  .subImageHeroContent {
+    padding: 80px 24px;
+  }
+
+  .subImageHeroContent p {
+    font-size: 19px;
+  }
+
   .subHero,
   .content {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .enhancedContent {
+    margin-top: -40px;
   }
 }
