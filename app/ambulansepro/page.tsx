@@ -3,7 +3,10 @@ export default function AmbulanseProPage() {
     <main className="subpage visualSubpage">
       <header className="header subHeader">
         <a className="brand" href="/">
-          <img src="/medipro-logo-v2.png" alt="MediPro" className="brandImage" />
+          <div className="mark">
+            <span>M</span>
+          </div>
+          <span>MediPro</span>
         </a>
 
         <nav className="nav">
@@ -21,11 +24,14 @@ export default function AmbulanseProPage() {
           alt="AmbulansePro for prehospitalt personell"
           className="subImageHeroBg"
         />
+
         <div className="subImageHeroOverlay" />
 
         <div className="subImageHeroContent">
           <div className="eyebrow">For prehospitalt personell</div>
+
           <h1>AmbulansePro</h1>
+
           <p>
             Strukturert støtte for ambulansepersonell som trenger rask tilgang
             til faglige ressurser, vurderingsstøtte og praktiske verktøy i
@@ -33,8 +39,12 @@ export default function AmbulanseProPage() {
           </p>
 
           <div className="heroButtons">
-            <a className="heroPrimary" href="/kontakt">Kontakt oss</a>
-            <a className="heroSecondary" href="/virksomheter">Virksomhetslisens</a>
+            <a className="heroPrimary" href="/kontakt">
+              Kontakt oss
+            </a>
+            <a className="heroSecondary" href="/virksomheter">
+              Virksomhetslisens
+            </a>
           </div>
         </div>
       </section>
