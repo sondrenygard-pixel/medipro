@@ -117,6 +117,8 @@ export default function KontaktPage() {
           <a href="mailto:post@medipro.no">post@medipro.no</a>
         </div>
       </section>
+
+    <Footer />
     </main>
   )
 }
