@@ -1,27 +1,10 @@
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-function Header() {
-  return (
-    <header className="subHeader">
-      <a className="siteBrand" href="/">
-        <div className="siteBrandMark">M</div>
-        <div>
-          <strong>MediPro</strong>
-          <span>Kliniske verktøy</span>
-        </div>
-      </a>
-
-      <nav className="subNav">
-        <a href="/">Forside</a>
-        <a href="/sykepleierpro">SykepleierPro</a>
-        <a href="/ambulansepro">AmbulansePro</a>
-        <a href="/legepro">LegePro</a>
-        <a href="/virksomheter">Virksomheter</a>
-        <a href="/support">Support</a>
-        <a href="/kontakt">Kontakt</a>
-      </nav>
-    </header>
-  )
+export const metadata = {
+  title: "SykepleierPro | Kliniske verktøy for sykepleiere",
+  description:
+    "SykepleierPro gir sykepleiere rask tilgang til kliniske verktøy, beregninger, struktur og faglig støtte gjennom vakten.",
 }
 
 export default function SykepleierProPage() {
@@ -41,8 +24,12 @@ export default function SykepleierProPage() {
             </p>
 
             <div className="heroActions">
-              <a className="primaryButton" href="/support">Support</a>
-              <a className="secondaryButton" href="/virksomheter">Virksomhetslisens</a>
+              <a className="primaryButton" href="/support">
+                Support
+              </a>
+              <a className="secondaryButton" href="/virksomheter">
+                Virksomhetslisens
+              </a>
             </div>
           </div>
 
@@ -103,8 +90,8 @@ export default function SykepleierProPage() {
           selvstendige ansvar.
         </div>
       </section>
- 
-    <Footer />
+
+      <Footer />
     </main>
   )
 }
