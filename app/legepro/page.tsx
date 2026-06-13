@@ -137,6 +137,8 @@ export default function LegeProPage() {
           retningslinjer.
         </div>
       </section>
+
+    <Footer />
     </main>
   )
 }
