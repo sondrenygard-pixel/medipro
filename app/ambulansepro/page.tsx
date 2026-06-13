@@ -24,46 +24,6 @@ function Header() {
   )
 }
 
-<footer className="siteFooter">
-  <div className="footerGrid">
-    <div>
-      <h3>MediPro</h3>
-      <p>
-        Digitale kliniske verktøy utviklet for norsk helsetjeneste.
-      </p>
-    </div>
-
-    <div>
-      <h4>Produkter</h4>
-
-      <a href="/sykepleierpro">SykepleierPro</a>
-      <a href="/ambulansepro">AmbulansePro</a>
-      <a href="/legepro">LegePro</a>
-    </div>
-
-    <div>
-      <h4>Informasjon</h4>
-
-      <a href="/virksomheter">Virksomheter</a>
-      <a href="/faglige-kilder">Faglige kilder</a>
-      <a href="/personvern">Personvern</a>
-      <a href="/vilkar">Vilkår</a>
-    </div>
-
-    <div>
-      <h4>Kontakt</h4>
-
-      <a href="mailto:post@medipro.no">post@medipro.no</a>
-      <a href="mailto:support@medipro.no">support@medipro.no</a>
-      <a href="/kontakt">Kontakt oss</a>
-    </div>
-  </div>
-
-  <div className="footerBottom">
-    © 2026 MediPro · Utviklet for norsk helsetjeneste
-  </div>
-</footer>
-
 export default function AmbulanseProPage() {
   return (
     <main className="subPage">
@@ -87,10 +47,7 @@ export default function AmbulanseProPage() {
                 Kontakt oss
               </a>
 
-              <a
-                className="secondaryButton"
-                href="/virksomheter"
-              >
+              <a className="secondaryButton" href="/virksomheter">
                 Virksomhetslisens
               </a>
             </div>
@@ -109,15 +66,13 @@ export default function AmbulanseProPage() {
         <div className="featureIntro">
           <span>Utviklet for ambulansetjenesten</span>
 
-          <h2>
-            Rask støtte når hvert sekund teller.
-          </h2>
+          <h2>Rask støtte når hvert sekund teller.</h2>
 
           <p>
-            AmbulansePro samler praktiske verktøy og faglig støtte
-            i én løsning. Målet er å redusere tidsbruk,
-            skape struktur og gjøre viktig informasjon tilgjengelig
-            i situasjoner der beslutninger må tas raskt.
+            AmbulansePro samler praktiske verktøy og faglig støtte i én løsning.
+            Målet er å redusere tidsbruk, skape struktur og gjøre viktig
+            informasjon tilgjengelig i situasjoner der beslutninger må tas
+            raskt.
           </p>
         </div>
 
@@ -125,98 +80,60 @@ export default function AmbulanseProPage() {
           <article className="subCard">
             <h2>ABCDE og pasientvurdering</h2>
             <p>
-              Strukturert støtte for systematisk undersøkelse,
-              observasjoner og vurdering av pasientens tilstand.
+              Strukturert støtte for systematisk undersøkelse, observasjoner og
+              vurdering av pasientens tilstand.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Akutte tilstander</h2>
             <p>
-              Praktisk tilgang til prosedyrer, algoritmer og
-              huskeregler for situasjoner som krever rask handling.
+              Praktisk tilgang til prosedyrer, algoritmer og huskeregler for
+              situasjoner som krever rask handling.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Medikamentstøtte</h2>
             <p>
-              Dosering, fortynning og legemiddelinformasjon
-              samlet i en moderne og brukervennlig løsning.
+              Dosering, fortynning og legemiddelinformasjon samlet i en moderne
+              og brukervennlig løsning.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Offline tilgang</h2>
             <p>
-              Kritisk innhold skal være tilgjengelig også når
-              dekningen er dårlig eller mangler helt.
+              Kritisk innhold skal være tilgjengelig også når dekningen er
+              dårlig eller mangler helt.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Beslutningsstøtte</h2>
             <p>
-              Verktøy som hjelper med prioritering,
-              kommunikasjon og struktur gjennom hele oppdraget.
+              Verktøy som hjelper med prioritering, kommunikasjon og struktur
+              gjennom hele oppdraget.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Kontinuerlig utvikling</h2>
             <p>
-              Nye funksjoner, prosedyrer og forbedringer
-              legges til fortløpende basert på behov i norsk
-              prehospital tjeneste.
+              Nye funksjoner, prosedyrer og forbedringer legges til fortløpende
+              basert på behov i norsk prehospital tjeneste.
             </p>
           </article>
         </div>
 
         <div className="subNotice">
-          AmbulansePro er et faglig støtteverktøy og erstatter ikke
-          klinisk vurdering, medisinsk ansvar, lokale prosedyrer eller
-          gjeldende retningslinjer.
+          AmbulansePro er et faglig støtteverktøy og erstatter ikke klinisk
+          vurdering, medisinsk ansvar, lokale prosedyrer eller gjeldende
+          retningslinjer.
         </div>
       </section>
-<footer className="siteFooter">
-  <div className="footerGrid">
-    <div>
-      <h3>MediPro</h3>
-      <p>
-        Digitale kliniske verktøy utviklet for norsk helsetjeneste.
-      </p>
-    </div>
 
-    <div>
-      <h4>Produkter</h4>
-
-      <a href="/sykepleierpro">SykepleierPro</a>
-      <a href="/ambulansepro">AmbulansePro</a>
-      <a href="/legepro">LegePro</a>
-    </div>
-
-    <div>
-      <h4>Informasjon</h4>
-
-      <a href="/virksomheter">Virksomheter</a>
-      <a href="/faglige-kilder">Faglige kilder</a>
-      <a href="/personvern">Personvern</a>
-      <a href="/vilkar">Vilkår</a>
-    </div>
-
-    <div>
-      <h4>Kontakt</h4>
-
-      <a href="mailto:post@medipro.no">post@medipro.no</a>
-      <a href="mailto:support@medipro.no">support@medipro.no</a>
-      <a href="/kontakt">Kontakt oss</a>
-    </div>
-  </div>
-
-  <div className="footerBottom">
-    © 2026 MediPro · Utviklet for norsk helsetjeneste
-  </div>
-</footer>
+      <Footer />
     </main>
   )
 }
