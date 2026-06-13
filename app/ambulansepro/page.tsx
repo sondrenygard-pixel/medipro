@@ -1,27 +1,10 @@
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-function Header() {
-  return (
-    <header className="subHeader">
-      <a className="siteBrand" href="/">
-        <div className="siteBrandMark">M</div>
-        <div>
-          <strong>MediPro</strong>
-          <span>Kliniske verktøy</span>
-        </div>
-      </a>
-
-      <nav className="subNav">
-        <a href="/">Forside</a>
-        <a href="/sykepleierpro">SykepleierPro</a>
-        <a href="/ambulansepro">AmbulansePro</a>
-        <a href="/legepro">LegePro</a>
-        <a href="/virksomheter">Virksomheter</a>
-        <a href="/support">Support</a>
-        <a href="/kontakt">Kontakt</a>
-      </nav>
-    </header>
-  )
+export const metadata = {
+  title: "AmbulansePro | Kliniske verktøy for ambulansetjenesten",
+  description:
+    "AmbulansePro utvikles for norsk ambulansetjeneste med strukturert støtte for prehospital vurdering, akutte tilstander, medikamentstøtte og klinisk beslutningsstøtte.",
 }
 
 export default function AmbulanseProPage() {
@@ -54,10 +37,7 @@ export default function AmbulanseProPage() {
           </div>
 
           <div className="productHeroImage">
-            <img
-              src="/ambulansepro-hero-premium.jpg"
-              alt="AmbulansePro"
-            />
+            <img src="/ambulansepro-hero-premium.jpg" alt="AmbulansePro" />
           </div>
         </section>
       </div>
