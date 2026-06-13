@@ -1,27 +1,10 @@
+import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-function Header() {
-  return (
-    <header className="subHeader">
-      <a className="siteBrand" href="/">
-        <div className="siteBrandMark">M</div>
-        <div>
-          <strong>MediPro</strong>
-          <span>Kliniske verktøy</span>
-        </div>
-      </a>
-
-      <nav className="subNav">
-        <a href="/">Forside</a>
-        <a href="/sykepleierpro">SykepleierPro</a>
-        <a href="/ambulansepro">AmbulansePro</a>
-        <a href="/legepro">LegePro</a>
-        <a href="/virksomheter">Virksomheter</a>
-        <a href="/support">Support</a>
-        <a href="/kontakt">Kontakt</a>
-      </nav>
-    </header>
-  )
+export const metadata = {
+  title: "LegePro | Kliniske verktøy for leger",
+  description:
+    "LegePro utvikles for leger som trenger rask tilgang til kliniske verktøy, kalkulatorer, vurderingsstøtte og relevant faglig informasjon.",
 }
 
 export default function LegeProPage() {
@@ -47,20 +30,14 @@ export default function LegeProPage() {
                 Kontakt oss
               </a>
 
-              <a
-                className="secondaryButton"
-                href="/virksomheter"
-              >
+              <a className="secondaryButton" href="/virksomheter">
                 Virksomhetslisens
               </a>
             </div>
           </div>
 
           <div className="productHeroImage">
-            <img
-              src="/kort-legepro.png"
-              alt="LegePro"
-            />
+            <img src="/kort-legepro.png" alt="LegePro" />
           </div>
         </section>
       </div>
@@ -69,15 +46,13 @@ export default function LegeProPage() {
         <div className="featureIntro">
           <span>Utviklet for kliniske beslutninger</span>
 
-          <h2>
-            Relevant støtte når tempoet er høyt.
-          </h2>
+          <h2>Relevant støtte når tempoet er høyt.</h2>
 
           <p>
             LegePro utvikles for å samle kliniske verktøy, kalkulatorer,
             vurderingsstøtte og faglige ressurser i én moderne plattform.
-            Målet er å gjøre viktig informasjon tilgjengelig raskt, slik at
-            mer tid kan brukes på pasientene.
+            Målet er å gjøre viktig informasjon tilgjengelig raskt, slik at mer
+            tid kan brukes på pasientene.
           </p>
         </div>
 
@@ -85,48 +60,48 @@ export default function LegeProPage() {
           <article className="subCard">
             <h2>Kliniske kalkulatorer</h2>
             <p>
-              Relevante medisinske beregninger samlet i en rask og
-              brukervennlig arbeidsflate.
+              Relevante medisinske beregninger samlet i en rask og brukervennlig
+              arbeidsflate.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Differensialdiagnoser</h2>
             <p>
-              Strukturert støtte for vurdering av symptomer,
-              kliniske funn og mulige diagnoser.
+              Strukturert støtte for vurdering av symptomer, kliniske funn og
+              mulige diagnoser.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Beslutningsstøtte</h2>
             <p>
-              Praktiske verktøy som bidrar til bedre oversikt,
-              prioritering og klinisk struktur.
+              Praktiske verktøy som bidrar til bedre oversikt, prioritering og
+              klinisk struktur.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Retningslinjer og fagstoff</h2>
             <p>
-              Hurtig tilgang til relevant faglig informasjon
-              og oppdaterte anbefalinger.
+              Hurtig tilgang til relevant faglig informasjon og oppdaterte
+              anbefalinger.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Utviklet for norsk helsetjeneste</h2>
             <p>
-              Innhold og funksjoner bygges med utgangspunkt
-              i norske arbeidsprosesser og kliniske behov.
+              Innhold og funksjoner bygges med utgangspunkt i norske
+              arbeidsprosesser og kliniske behov.
             </p>
           </article>
 
           <article className="subCard">
             <h2>Kontinuerlig videreutvikling</h2>
             <p>
-              Nye funksjoner og fagområder legges til fortløpende
-              basert på brukerbehov og utviklingen i helsetjenesten.
+              Nye funksjoner og fagområder legges til fortløpende basert på
+              brukerbehov og utviklingen i helsetjenesten.
             </p>
           </article>
         </div>
@@ -138,7 +113,7 @@ export default function LegeProPage() {
         </div>
       </section>
 
-    <Footer />
+      <Footer />
     </main>
   )
 }
