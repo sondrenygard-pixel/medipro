@@ -103,6 +103,8 @@ export default function PersonvernPage() {
           <a href="mailto:post@medipro.no">post@medipro.no</a>
         </div>
       </section>
+   
+    <Footer />
     </main>
   )
 }
