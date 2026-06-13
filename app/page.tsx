@@ -1,5 +1,11 @@
 import Footer from "./components/Footer"
 
+export const metadata = {
+  title: "MediPro | Digitale verktøy for helsepersonell",
+  description:
+    "MediPro utvikler kliniske apper for sykepleiere, ambulansepersonell og leger i norsk helsetjeneste.",
+}
+
 function BrandLogo() {
   return (
     <a className="siteBrand" href="/">
