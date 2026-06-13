@@ -119,6 +119,8 @@ export default function VilkarPage() {
           <a href="/kontakt">Kontakt oss</a>
         </div>
       </section>
+
+    <Footer />
     </main>
   )
 }
