@@ -109,6 +109,8 @@ export default function SourcesPage() {
           <a href="/kontakt">Kontakt oss</a>
         </div>
       </section>
+
+    <Footer />
     </main>
   )
 }
