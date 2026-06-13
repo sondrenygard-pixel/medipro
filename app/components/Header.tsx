@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="subHeader">
+    <header className="siteHeader subHeader">
       <a className="siteBrand" href="/">
         <div className="siteBrandMark">M</div>
         <div>
@@ -9,7 +9,7 @@ export default function Header() {
         </div>
       </a>
 
-      <nav className="subNav">
+      <nav className="siteNav subNav">
         <a href="/">Forside</a>
         <a href="/sykepleierpro">SykepleierPro</a>
         <a href="/ambulansepro">AmbulansePro</a>
