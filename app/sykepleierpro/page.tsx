@@ -103,6 +103,8 @@ export default function SykepleierProPage() {
           selvstendige ansvar.
         </div>
       </section>
+ 
+    <Footer />
     </main>
   )
 }
