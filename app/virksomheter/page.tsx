@@ -109,6 +109,8 @@ export default function VirksomheterPage() {
           <a href="/kontakt">Kontakt MediPro</a>
         </div>
       </section>
+
+    <Footer />
     </main>
   )
 }
