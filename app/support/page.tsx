@@ -112,6 +112,8 @@ export default function SupportPage() {
           <a href="mailto:support@medipro.no">support@medipro.no</a>
         </div>
       </section>
+
+    <Footer />
     </main>
   )
 }
