@@ -78,10 +78,10 @@ export default function KontaktPage() {
           <article className="subCard">
             <h2>Selskapsinformasjon</h2>
             <p>
-              MediPro er en tjeneste levert av Smartverkstedet.
+              MediPro er en tjeneste levert av PRO MED PROFESSIONAL MEDICS AS.
               <br />
               <br />
-              <strong>Org.nr. 932 599 147</strong>
+              <strong>Org.nr. 923 076 026</strong>
             </p>
           </article>
         </div>
