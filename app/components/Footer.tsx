@@ -36,8 +36,8 @@ export default function Footer() {
       </div>
 
       <div className="footerBottom">
-        © 2026 MediPro · En tjeneste levert av SMARTVERKSTEDET.
-        Org.nr: 932 599 147
+        © 2026 MediPro · En tjeneste levert av PRO MED PROFESSIONAL MEDICS AS.
+        Org.nr: 923 076 026
       </div>
     </footer>
   )
