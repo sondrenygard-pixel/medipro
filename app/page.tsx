@@ -36,13 +36,23 @@ export default function Home() {
           </p>
 
           <div className="heroActions">
-            <a className="primaryButton" href="#produkter">
-              Utforsk produktene
+            <a
+              className="primaryButton"
+              href="https://apps.apple.com/no/app/sykepleierpro/id6775972429"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Last ned SykepleierPro
             </a>
-            <a className="secondaryButton" href="/virksomheter">
-              For virksomheter
+            <a className="secondaryButton" href="#produkter">
+              Se produktfamilien
             </a>
           </div>
+
+          <p className="heroFinePrint">
+            SykepleierPro er nå tilgjengelig i App Store. AmbulansePro og
+            LegePro er under utvikling.
+          </p>
         </div>
       </section>
 
@@ -61,6 +71,7 @@ export default function Home() {
             <img src="/kort-sykepleierpro.png" alt="SykepleierPro" />
             <div className="productCardOverlay" />
             <div className="productCardContent">
+              <div className="subHeroBadge">Tilgjengelig i App Store</div>
               <h3>SykepleierPro</h3>
               <p>Kliniske verktøy, beregninger og støtte gjennom vakten.</p>
               <span>Les mer om SykepleierPro →</span>
@@ -71,6 +82,7 @@ export default function Home() {
             <img src="/kort-ambulansepro.png" alt="AmbulansePro" />
             <div className="productCardOverlay" />
             <div className="productCardContent">
+              <div className="subHeroBadge">Kommer snart til App Store</div>
               <h3>AmbulansePro</h3>
               <p>
                 Strukturert støtte for prehospital vurdering, tiltak og
@@ -84,6 +96,7 @@ export default function Home() {
             <img src="/kort-legepro.png" alt="LegePro" />
             <div className="productCardOverlay" />
             <div className="productCardContent">
+              <div className="subHeroBadge">Kommer snart til App Store</div>
               <h3>LegePro</h3>
               <p>
                 Relevante kliniske verktøy, kalkulatorer og faglig støtte for
