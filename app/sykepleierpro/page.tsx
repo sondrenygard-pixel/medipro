@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 export const metadata = {
   title: "SykepleierPro | Kliniske verktøy for sykepleiere",
   description:
-    "SykepleierPro gir sykepleiere rask tilgang til kliniske verktøy, beregninger, struktur og faglig støtte gjennom vakten.",
+    "SykepleierPro gir sykepleiere i Norge rask tilgang til kliniske verktøy, beregninger, struktur og faglig støtte gjennom vakten.",
 }
 
 export default function SykepleierProPage() {
@@ -15,22 +15,31 @@ export default function SykepleierProPage() {
 
         <section className="productHero">
           <div className="productHeroText">
-            <div className="subHeroBadge">For sykepleiere</div>
+            <div className="subHeroBadge">Av sykepleiere i Norge – for sykepleiere i Norge</div>
             <h1>SykepleierPro</h1>
             <p>
-              En moderne klinisk arbeidsflate for sykepleiere som trenger rask
-              tilgang til vurderingsverktøy, beregninger, struktur og faglig
-              støtte gjennom vakten.
+              Kliniske verktøy, kalkulatorer og faglig støtte samlet i én app
+              for norske sykepleiere og sykepleierstudenter.
             </p>
 
             <div className="heroActions">
-              <a className="primaryButton" href="/support">
+              <a
+                className="primaryButton"
+                href="https://apps.apple.com/no/app/sykepleierpro/id6775972429"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Last ned på App Store
+              </a>
+              <a className="secondaryButton" href="/support">
                 Support
               </a>
-              <a className="secondaryButton" href="/virksomheter">
-                Virksomhetslisens
-              </a>
             </div>
+
+            <p className="heroFinePrint">
+              Tilgjengelig for iPhone og iPad. Grunnfunksjoner er gratis.
+              Premium gir tilgang til avanserte kalkulatorer og flere verktøy.
+            </p>
           </div>
 
           <div className="productHeroImage">
@@ -45,7 +54,7 @@ export default function SykepleierProPage() {
           <h2>Raskere oversikt når vakten krever presisjon.</h2>
           <p>
             SykepleierPro er laget for praktisk bruk i arbeidshverdagen. Målet
-            er å samle de verktøyene sykepleiere ofte trenger, slik at viktig
+            er å samle verktøyene sykepleiere ofte trenger, slik at viktig
             støtte er tilgjengelig uten unødvendig leting.
           </p>
         </div>
@@ -54,8 +63,8 @@ export default function SykepleierProPage() {
           <article className="subCard">
             <h2>Kliniske vurderinger</h2>
             <p>
-              Verktøy som NEWS2, ABCDE, GCS og sepsis-støtte gir struktur når
-              pasientens tilstand skal vurderes og kommuniseres videre.
+              NEWS2, ABCDE, GCS, sepsis, akutt barn og forgiftning gir struktur
+              når pasientens tilstand skal vurderes og kommuniseres videre.
             </p>
           </article>
 
@@ -71,15 +80,15 @@ export default function SykepleierProPage() {
             <h2>Beregninger og legemidler</h2>
             <p>
               Praktiske kalkulatorer for dose, infusjon, fortynning, væske og
-              andre relevante beregninger samlet på ett sted.
+              relevante legemiddeloppslag samlet på ett sted.
             </p>
           </article>
 
           <article className="subCard">
-            <h2>Kontinuerlig utvikling</h2>
+            <h2>Laget for norske forhold</h2>
             <p>
-              Appen videreutvikles fortløpende med nye funksjoner, bedre
-              struktur og mer innhold tilpasset norsk helsetjeneste.
+              Appen er utviklet med fokus på norsk klinisk praksis, norske
+              kilder, pasientsikkerhet og effektiv arbeidsflyt.
             </p>
           </article>
         </div>
