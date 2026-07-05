@@ -75,8 +75,8 @@ export default function PersonvernPage() {
             <span>Kontakt ved spørsmål</span>
             <h2>Spørsmål om personvern?</h2>
             <p>
-              MediPro er en tjeneste levert av Smartverkstedet, org.nr.
-              932 599 147.
+              MediPro er en tjeneste levert av PRO MED PROFESSIONAL MEDICS AS, org.nr.
+              923 076 026.
             </p>
           </div>
 
