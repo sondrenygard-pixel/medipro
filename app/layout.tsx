@@ -1,4 +1,5 @@
 import "./global.css"
+import "./medipro.css"
 
 
 export const metadata = {
